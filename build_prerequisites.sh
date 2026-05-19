@@ -78,6 +78,19 @@ mkdir -p ../lib
 cp lib/libg2o.so ../lib/
 cd ../../..
 
+echo ">> Se verifică Vocabulary..."
+
+cd Vocabulary
+if [ ! -f "ORBvoc.txt" ]; then
+    if [ -f "ORBvoc.txt.tar.gz" ]; then
+        echo ">> Se dezarhivează ORBvoc..."
+        tar -xf ORBvoc.txt.tar.gz
+    else
+        echo ">> WARNING: ORBvoc lipsă!"
+    fi
+fi
+cd ..
+
 # --- Pasul 5: Compilare Proiect Principal ---
 echo ">> Se compilează proiectul principal (SLAM Core + slam_kitti)..."
 mkdir -p build && cd build
