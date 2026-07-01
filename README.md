@@ -18,5 +18,5 @@ chmod +x build.sh
 ## Rulare
 
 ```
-./Examples/Proiect/slam_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTI00-02.yaml dataset/
+./Examples/Proiect/slam_kitti Vocabulary/ORBvoc.txt Examples/Monocular/settings.yaml dataset/
 ```
