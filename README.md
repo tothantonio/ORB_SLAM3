@@ -94,10 +94,6 @@ Example:
 ```bash
 ./Examples/Proiect/slam_kitti Vocabulary/ORBvoc.txt Examples/Monocular/settings.yaml /path/to/dataset/
 ```
-<<<<<<< HEAD
-./Examples/Proiect/slam_kitti Vocabulary/ORBvoc.txt Examples/Monocular/settings.yaml dataset/
-```
-=======
 
 Notes:
 
@@ -129,4 +125,3 @@ If the build fails, check the following:
 - include/: public headers
 - src/: implementation files
 - Vocabulary/: ORB vocabulary data
->>>>>>> add readme
